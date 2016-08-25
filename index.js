@@ -239,7 +239,7 @@ TadoAccessory.prototype.setTargetHeatingCoolingState = function(state, callback)
 
         body = {
             "termination": {
-                "type": "MANUAL"
+                "type": "TADO_MODE"
             },
             "setting": {
                 "power": "OFF",
@@ -273,7 +273,7 @@ TadoAccessory.prototype.setTargetTemperature = function(temp, callback) {
 
     body = {
         "termination": {
-            "type": "MANUAL"
+            "type": "TADO_MODE"
         },
         "setting": {
             "swing": "ON",
